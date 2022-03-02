@@ -8,6 +8,9 @@ API_ROOT = '/api/v1'
 def resource_name():
     return f"{API_ROOT}/{{cookiecutter.entity_name}}"
 
+@app.route("/", methods=['GET'])
+def default_home():
+    return home()
 
 @app.route(API_ROOT, methods=['GET'])
 def home():
