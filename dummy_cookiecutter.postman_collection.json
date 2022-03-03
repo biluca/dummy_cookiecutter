@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "6675bf93-2178-4b3d-948e-52664b68d4bf",
+		"name": "Cookiecutter_CRUD_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HOME PAGE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE OBJECT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"partner_name\": \"Loadsmart\",\n    \"partner_age\": 25,\n    \"partner_favorite_coloer\": \"Red\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/entity_name",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"entity_name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ OBJECT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/entity_name/123456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"entity_name",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE OBJECT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"partner_name\": \"Loadsmart\",\n    \"partner_age\": 25,\n    \"partner_favorite_coloer\": \"Red\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/entity_name",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"entity_name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE OBJECT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/entity_name/123456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"entity_name",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
